@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.navbar {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 13.5em;
+    overflow: auto;
+}
+
+.navbar ul {
+    padding-left: 0;
+}
+
+.navbar li {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.7em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.navbar li:last-of-type {
+    border: none;
+    margin-bottom: -1em;
+}
+
+.navbar a {
+    display: block;
+    color: #474545;
+    text-decoration: none;
+    font-size: 1.0em;
+    width: 100%;
+    text-indent: 1.5em;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+.main-doc {
+    margin: 0 2em 10em;
+}
+
+article {
+    margin: 0 1em;
+    color: #474545;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+article li {
+    margin-bottom: 0.8em;
+    padding: 0.3em;
+}
+
+#inner-list {
+    list-style-type: none;
+}
+
+code {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    background-color: #f7f7f7dc;
+    padding: 1em;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+.word-break {
+    white-space: pre-line;
+}
+
+@media (min-width:768px) {
+    #main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 290px;
+        min-width: 290px;
+        border-right: 1px solid #474545;
+        overflow: auto;
+    }
+
+    #title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 0.5em;
+        margin-bottom: -0.2em;
+        padding: 0.2em;
+    }
+
+    .navbar {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: none;
+        padding: 0.7em 0;
+        margin-bottom: 0;
+    }
+
+    .navbar li:last-of-type {
+        border-top: 1px solid black;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 300px;
+        padding: 0 1em;
+    }
+}
